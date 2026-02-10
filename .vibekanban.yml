@@ -1,0 +1,4 @@
+# VibeKanban integration configuration
+# Project-specific settings can be added here
+project: booking-web-app
+default_branch: main
