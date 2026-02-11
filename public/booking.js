@@ -30,9 +30,9 @@ form.addEventListener('submit', async event => {
 
   const payload = {
     name: form.elements.name.value,
-    contact: form.elements.contact.value,
+    email: form.elements.email.value,
     date: form.elements.date.value,
-    time: form.elements.time.value
+    timeSlot: form.elements.time.value
   }
 
   try {
