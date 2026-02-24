@@ -27,7 +27,8 @@ const port = process.env.PORT || 3000
 async function start() {
   await initDb()
   app.listen(port, () => {
-    console.log(`Backend listening on port ${port}`)
+    console.log(`Playx server listening on port ${port}`)
+    console.log('Serving login page at /login')
   })
 }
 
