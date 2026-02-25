@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a Slot</title>
+    <link rel="stylesheet" href="/booking.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Book a Time Slot</h1>
+
+      <form id="booking-form">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Contact
+          <input type="text" name="contact" required />
+        </label>
+
+        <label>
+          Date
+          <input type="date" name="date" required />
+        </label>
+
+        <label>
+          Time
+          <select name="time" required>
+            <option value="">Select a time</option>
+          </select>
+        </label>
+
+        <button type="submit" id="submit-btn">Book now</button>
+        <p id="status" role="status"></p>
+      </form>
+    </main>
+
+    <script src="/booking.js"></script>
+  </body>
+</html>
