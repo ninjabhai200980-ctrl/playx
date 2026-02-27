@@ -41,6 +41,13 @@ button {
   font-size: 1rem;
 }
 
+.field-error {
+  min-height: 1.2em;
+  margin-top: 0.25rem;
+  color: #b42318;
+  font-size: 0.82rem;
+}
+
 button {
   background: #1f2937;
   color: #ffffff;

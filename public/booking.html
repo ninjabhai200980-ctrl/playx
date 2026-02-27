@@ -13,24 +13,34 @@
       <form id="booking-form">
         <label>
           Name
-          <input type="text" name="name" required />
+          <input type="text" name="name" id="name" required />
+          <span class="field-error" id="name-error" role="alert"></span>
         </label>
 
         <label>
-          Contact
-          <input type="text" name="contact" required />
+          Email
+          <input type="email" name="email" id="email" required />
+          <span class="field-error" id="email-error" role="alert"></span>
+        </label>
+
+        <label>
+          Password
+          <input type="password" name="password" id="password" required minlength="8" />
+          <span class="field-error" id="password-error" role="alert"></span>
         </label>
 
         <label>
           Date
-          <input type="date" name="date" required />
+          <input type="date" name="date" id="date" required />
+          <span class="field-error" id="date-error" role="alert"></span>
         </label>
 
         <label>
           Time
-          <select name="time" required>
+          <select name="timeSlot" id="timeSlot" required>
             <option value="">Select a time</option>
           </select>
+          <span class="field-error" id="timeSlot-error" role="alert"></span>
         </label>
 
         <button type="submit" id="submit-btn">Book now</button>
